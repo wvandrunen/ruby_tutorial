@@ -44,4 +44,10 @@ class TestAdd < Test::Unit::TestCase
 
 		assert_equal 5, string_cal.add("0,2,3")
 	end
+
+	def test_add_zero_and_two_and_three_four
+		string_cal = StringCalculator.new
+
+		assert_equal 5, string_cal.add("0,2,3,4")
+	end
 end
