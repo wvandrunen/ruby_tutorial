@@ -32,16 +32,10 @@ class TestAdd < Test::Unit::TestCase
 
 		assert_equal 9, string_cal.add("0,2,3,4")
 	end
-
-	def test_bla
-		string_cal = ::StringCalculator.new
-
-		assert_equal false, string_cal.add("0,2,3,4")
-	end
-
+	
 	def test_add_one_and_two_with_eof
 		string_cal = ::StringCalculator.new
  
-		assert_equal 3, string_cal.add("1\n,2")
+		assert_equal 12, string_cal.add("1\n2\n4,5")
 	end
 end
